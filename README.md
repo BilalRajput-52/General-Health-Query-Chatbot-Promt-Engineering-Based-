@@ -9,6 +9,18 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
+# Tasks Overview
+
+| Task | Title | Status |
+|------|-------|--------|
+| Task 1 | Exploring and Visualizing the Iris Dataset |  Complete |
+| Task 2 | Predict Future Stock Prices |  complete |
+| Task 3 | Heart Disease Prediction |  complete |
+| Task 4 | General Health Query Chatbot |  complete |
+| Task 5 | Mental Health Support Chatbot |  Upcoming |
+| Task 6 | House Price Prediction |  Upcoming |
+
+
 **Task 4 — AI/ML Engineering Internship**
 **DevelopersHub Corporation | Due: 28 April, 2026**
 
