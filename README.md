@@ -1,4 +1,4 @@
-# 🏥 MediGuide — General Health Query Chatbot
+# MediGuide — General Health Query Chatbot
 
 <div align="center">
 
@@ -18,7 +18,7 @@
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 
 - [Overview](#-overview)
 - [Problem Statement](#-problem-statement)
@@ -39,7 +39,7 @@
 
 ---
 
-## 🔍 Overview
+##  Overview
 
 **MediGuide** is an AI-powered **General Health Query Chatbot** built as Task 4 of the DevelopersHub Corporation AI/ML Engineering Internship. It leverages **Meta's LLaMA 3.3 70B** large language model served through the **Groq API** (world's fastest LLM inference engine) to answer general health-related questions in a safe, friendly, and informative manner.
 
@@ -53,7 +53,7 @@ The project demonstrates real-world application of:
 
 ---
 
-## 📋 Problem Statement
+##  Problem Statement
 
 **Objective:** Create a chatbot that can answer general health-related questions using a Large Language Model (LLM), with prompt engineering to ensure:
 - Responses are friendly and clearly written
@@ -64,23 +64,23 @@ The project demonstrates real-world application of:
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Description |
 |---------|-------------|
-| 🦙 **LLaMA 3.3 70B** | State-of-the-art open-source model with 70 billion parameters |
-| ⚡ **Groq API** | Ultra-fast inference — up to 800 tokens/second |
-| 🎯 **Prompt Engineering** | 6 advanced techniques applied to system prompt design |
-| 🛡️ **Two-Layer Safety** | Python pre-filter + LLM-level guardrails |
-| 🚨 **Emergency Detection** | Auto-detects emergencies and redirects to 115/1122 |
-| 💬 **Multi-turn Memory** | Remembers full conversation context |
-| 🔒 **Secure API Key** | `.env` file pattern — no hardcoded credentials |
-| 💻 **Interactive CLI** | Live chat interface in the terminal |
-| 📊 **Prompt Comparison** | Demonstrates V1 vs V2 vs V3 prompt effectiveness |
+|  **LLaMA 3.3 70B** | State-of-the-art open-source model with 70 billion parameters |
+|  **Groq API** | Ultra-fast inference — up to 800 tokens/second |
+|  **Prompt Engineering** | 6 advanced techniques applied to system prompt design |
+|  **Two-Layer Safety** | Python pre-filter + LLM-level guardrails |
+|  **Emergency Detection** | Auto-detects emergencies and redirects to 115/1122 |
+|  **Multi-turn Memory** | Remembers full conversation context |
+|  **Secure API Key** | `.env` file pattern — no hardcoded credentials |
+|  **Interactive CLI** | Live chat interface in the terminal |
+|  **Prompt Comparison** | Demonstrates V1 vs V2 vs V3 prompt effectiveness |
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
@@ -98,16 +98,16 @@ The project demonstrates real-world application of:
 
 | Criteria | Groq + LLaMA 3.3 70B | OpenAI GPT-3.5 | Mistral-7B |
 |----------|----------------------|----------------|------------|
-| Speed | ⚡ ~800 tok/sec | ~60 tok/sec | Varies |
-| Cost | 🆓 Free tier | 💲 Paid | Free |
+| Speed |  ~800 tok/sec | ~60 tok/sec | Varies |
+| Cost |  Free tier |  Paid | Free |
 | Model Size | 70B parameters | ~175B | 7B |
 | Quality | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ |
-| Open Source | ✅ Yes (Meta) | ❌ No | ✅ Yes |
+| Open Source |  Yes (Meta) |  No |  Yes |
 | Health Q&A | Excellent | Good | Limited |
 
 ---
 
-## 🏗️ Project Architecture
+##  Project Architecture
 
 ```
 User Input
@@ -120,7 +120,7 @@ User Input
 │  │Keywords │  │ Keywords     │  │
 │  └────┬────┘  └──────┬───────┘  │
 │       │              │           │
-│  Instant 🚨     Add caution     │
+│  Instant      Add caution     │
 │  Alert          context flag    │
 └───────┼──────────────┼──────────┘
         │              │
@@ -146,7 +146,7 @@ User Input
 
 ---
 
-## 🎯 Prompt Engineering
+##  Prompt Engineering
 
 Prompt Engineering is the practice of crafting instructions that guide an LLM to produce desired outputs consistently and safely. This is the **core skill** demonstrated in Task 4.
 
@@ -156,7 +156,7 @@ The system prompt acts as the "constitution" of the chatbot — it defines who M
 
 ### 6 Techniques Applied
 
-#### 1. 🎭 Role Prompting
+#### 1.  Role Prompting
 Giving the model a clear identity and persona.
 ```
 "You are MediGuide, a friendly and knowledgeable general health
@@ -166,7 +166,7 @@ information assistant created for EDUCATIONAL PURPOSES ONLY."
 
 ---
 
-#### 2. 🔒 Constraint Injection
+#### 2. Constraint Injection
 Hard rules the model must strictly follow.
 ```
 "NEVER diagnose a specific condition for the user"
@@ -177,7 +177,7 @@ Hard rules the model must strictly follow.
 
 ---
 
-#### 3. 📐 Format Control
+#### 3.  Format Control
 Specifying exactly how responses should be structured.
 ```
 "Use short clear paragraphs for explanations"
@@ -189,7 +189,7 @@ Specifying exactly how responses should be structured.
 
 ---
 
-#### 4. 🎨 Tone Setting
+#### 4.  Tone Setting
 Defining the emotional register and communication style.
 ```
 "Be warm, empathetic, clear, and easy to understand"
@@ -200,7 +200,7 @@ Defining the emotional register and communication style.
 
 ---
 
-#### 5. 📋 Scope Definition
+#### 5.  Scope Definition
 Explicitly listing what the chatbot can and cannot help with.
 ```
 ## WHAT YOU CAN HELP WITH:
@@ -216,7 +216,7 @@ Explicitly listing what the chatbot can and cannot help with.
 
 ---
 
-#### 6. 🛡️ Safety Guardrails
+#### 6.  Safety Guardrails
 Emergency-specific instructions baked into the prompt.
 ```
 "For EMERGENCIES (chest pain, difficulty breathing, stroke, severe bleeding)
@@ -228,7 +228,7 @@ Emergency-specific instructions baked into the prompt.
 
 ---
 
-## 🛡️ Safety System
+##  Safety System
 
 MediGuide uses a **two-layer safety architecture** to ensure no harmful advice is given.
 
@@ -272,10 +272,10 @@ Even if a query passes Layer 1, the system prompt instructs LLaMA 3.3 70B to:
 
 | Query | Layer 1 | Layer 2 | Final Response |
 |-------|---------|---------|----------------|
-| "I have chest pain" | 🚨 BLOCKED | Bypassed | Emergency 115/1122 alert |
-| "Do I have diabetes?" | ⚠️ FLAGGED | Extra caution | Refuses, redirects to doctor |
-| "Is paracetamol safe?" | ✅ SAFE | Normal | General safety info + disclaimer |
-| "What causes headaches?" | ✅ SAFE | Normal | Informative educational response |
+| "I have chest pain" |  BLOCKED | Bypassed | Emergency 115/1122 alert |
+| "Do I have diabetes?" |  FLAGGED | Extra caution | Refuses, redirects to doctor |
+| "Is paracetamol safe?" | SAFE | Normal | General safety info + disclaimer |
+| "What causes headaches?" |  SAFE | Normal | Informative educational response |
 
 ---
 
@@ -288,7 +288,7 @@ Even if a query passes Layer 1, the system prompt instructs LLaMA 3.3 70B to:
 
 ### Step 1 — Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/developershub-aiml-internship.git
+git clone https://github.com/BilalRajput-52/developershub-aiml-internship.git
 cd developershub-aiml-internship/task4-health-chatbot
 ```
 
@@ -303,7 +303,7 @@ pip install -r requirements.txt
 ```
 
 ### Step 3 — Get Your Free Groq API Key
-1. Visit 👉 **https://console.groq.com**
+1. Visit  **https://console.groq.com**
 2. Create a free account
 3. Navigate to **API Keys** → **Create API Key**
 4. Copy the key (starts with `gsk_...`)
@@ -319,7 +319,7 @@ GROQ_API_KEY=gsk_your_actual_api_key_here
 
 ### Step 5 — Verify Setup
 ```bash
-python -c "from groq import Groq; print('✅ Setup successful!')"
+python -c "from groq import Groq; print(' Setup successful!')"
 ```
 
 ---
@@ -358,13 +358,13 @@ print(response.content)
 
 ---
 
-## 🧪 Example Queries & Outputs
+##  Example Queries & Outputs
 
 ### Query 1: General Symptom (Required by Task)
 ```
-👤 User: What causes a sore throat?
+  User: What causes a sore throat?
 
-🤖 MediGuide:
+ MediGuide:
 A sore throat is usually caused by one of these common reasons:
 
 • Viral infections — The most common cause (cold, flu, COVID-19)
@@ -376,7 +376,7 @@ A sore throat is usually caused by one of these common reasons:
 
 Most sore throats from viral infections resolve within 5-7 days.
 
-⚕️ If your sore throat is severe, lasts more than a week, or is
+If your sore throat is severe, lasts more than a week, or is
 accompanied by high fever, please consult a healthcare professional.
 ```
 
@@ -384,9 +384,9 @@ accompanied by high fever, please consult a healthcare professional.
 
 ### Query 2: OTC Medication Safety (Required by Task)
 ```
-👤 User: Is paracetamol safe for children?
+ User: Is paracetamol safe for children?
 
-🤖 MediGuide:
+ MediGuide:
 Paracetamol (also called acetaminophen) is generally safe for children
 when used correctly. Here are the key guidelines:
 
@@ -397,10 +397,10 @@ when used correctly. Here are the key guidelines:
 • Do not give to infants under 2 months without a doctor's advice
 • Never use adult paracetamol tablets for children — too high a dose
 
-⚠️ Overdose risk: Always read the label and do not exceed the
+ Overdose risk: Always read the label and do not exceed the
 recommended amount, as too much paracetamol can harm the liver.
 
-⚕️ For your child's specific situation, please consult a pediatrician
+ For your child's specific situation, please consult a pediatrician
 or pharmacist who can recommend the exact dose.
 ```
 
@@ -408,17 +408,17 @@ or pharmacist who can recommend the exact dose.
 
 ### Query 3: Emergency Detection (Safety Filter Demo)
 ```
-👤 User: I have severe chest pain and can't breathe
+ User: I have severe chest pain and can't breathe
 
-🤖 MediGuide:
-🚨 EMERGENCY — Please Act Immediately!
+ MediGuide:
+ EMERGENCY — Please Act Immediately!
 
 The symptoms you described may need urgent medical attention right now.
 
-📞 Call Emergency Services Immediately:
+ Call Emergency Services Immediately:
 • 🇵🇰 Pakistan Rescue : 115
 • 🇵🇰 Emergency      : 1122
-• 🌍 International   : 911 or your local emergency number
+•  International   : 911 or your local emergency number
 
 ⚠️ Please do NOT wait — call for help immediately!
 ```
@@ -428,9 +428,9 @@ The symptoms you described may need urgent medical attention right now.
 
 ### Query 4: Diagnosis Request (Refused)
 ```
-👤 User: I'm always thirsty. Do I have diabetes?
+ User: I'm always thirsty. Do I have diabetes?
 
-🤖 MediGuide: [⚠️ HIGH-RISK — Extra caution applied]
+ MediGuide: [ HIGH-RISK — Extra caution applied]
 I understand your concern, and it's good that you're paying attention
 to your body's signals. However, I'm not able to diagnose any medical
 condition — only a licensed doctor can do that after a proper examination
@@ -448,31 +448,31 @@ What I recommend:
 2. Note any other symptoms (frequent urination, fatigue, blurry vision)
 3. Share this information with your doctor
 
-⚕️ Please visit a healthcare professional for proper evaluation
+ Please visit a healthcare professional for proper evaluation
 and blood glucose testing. Early detection is very important.
 ```
 
 ---
 
-## 💬 Multi-turn Conversation
+##  Multi-turn Conversation
 
 MediGuide remembers the full conversation history using LangChain's message system. This enables natural, context-aware dialogue:
 
 ```
-👤 Turn 1: "I've been having headaches for the past 3 days."
-🤖 MediGuide: [Explains common causes of headaches...]
+ Turn 1: "I've been having headaches for the past 3 days."
+MediGuide: [Explains common causes of headaches...]
 
-👤 Turn 2: "They happen mostly in the morning after waking up."
-🤖 MediGuide: [Connects to morning-specific causes like dehydration,
+ Turn 2: "They happen mostly in the morning after waking up."
+ MediGuide: [Connects to morning-specific causes like dehydration,
                sleep position, blood pressure — remembers "headaches"
                from Turn 1 without needing to repeat it]
 
-👤 Turn 3: "Could this be related to dehydration or screen time?"
-🤖 MediGuide: [Directly addresses both factors in context of the
+ Turn 3: "Could this be related to dehydration or screen time?"
+ MediGuide: [Directly addresses both factors in context of the
                morning headache pattern already established]
 
-👤 Turn 4: "When should I worry and see a doctor about this?"
-🤖 MediGuide: [Gives specific red flags relevant to the full
+ Turn 4: "When should I worry and see a doctor about this?"
+ MediGuide: [Gives specific red flags relevant to the full
                headache context discussed so far]
 ```
 
@@ -480,7 +480,7 @@ This is made possible by maintaining a `chat_history` list of `HumanMessage` and
 
 ---
 
-## 📊 Prompt Engineering Analysis
+##  Prompt Engineering Analysis
 
 The notebook includes a side-by-side comparison of three prompt versions using the **same query** and the **same model** (`llama-3.3-70b-versatile`):
 
@@ -489,19 +489,19 @@ The notebook includes a side-by-side comparison of three prompt versions using t
 | Aspect | V1 — Minimal | V2 — Role + Tone | V3 — Full Engineering |
 |--------|-------------|-----------------|----------------------|
 | Prompt Size | 22 chars | 180 chars | 1,100+ chars |
-| Safety Disclaimer | ❌ None | Sometimes | ✅ Always |
+| Safety Disclaimer |  None | Sometimes |  Always |
 | Dosage Guidance | Generic | General | Specific with warnings |
-| Doctor Referral | ❌ Missing | Sometimes | ✅ Always present |
-| Response Structure | Unstructured | Some bullets | ✅ Clear bullets |
-| Emergency Handling | ❌ None | ❌ None | ✅ Defined rules |
+| Doctor Referral |  Missing | Sometimes |  Always present |
+| Response Structure | Unstructured | Some bullets |  Clear bullets |
+| Emergency Handling |  None |  None |  Defined rules |
 | Tone | Robotic | Friendly | Warm & Professional |
-| **Overall Quality** | ❌ Poor | ~ Adequate | ✅✅ Excellent |
+| **Overall Quality** |  Poor | ~ Adequate |  Excellent |
 
 **Conclusion:** Full prompt engineering (V3) produces dramatically safer, more structured, and more helpful responses from the same underlying model.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 task4-health-chatbot/
@@ -553,7 +553,7 @@ __pycache__/
 
 ---
 
-## 📈 Key Results & Findings
+##  Key Results & Findings
 
 ### 1. Prompt Engineering Impact
 - **V3 (Full Engineering)** produced 100% disclaimer inclusion vs 0% for V1
@@ -582,7 +582,7 @@ __pycache__/
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 | Improvement | Description | Priority |
 |-------------|-------------|----------|
@@ -596,24 +596,21 @@ __pycache__/
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
-**[Your Name]**
+**[Bilal Ahmed]**
 AI/ML Engineering Intern — DevelopersHub Corporation
 
-- 📧 Email: your.email@example.com
-- 🐙 GitHub: [@your_username](https://github.com/your_username)
-- 💼 LinkedIn: [linkedin.com/in/your_profile](https://linkedin.com/in/your_profile)
+- 📧 Email: bilalahmadc.m56@gmail.com
+- 🐙 GitHub: [@BilalRajput-52](https://github.com/BilalRajput-52)
+- 💼 LinkedIn: [linkedin.com/in/bilal-ahmed56ab](https://linkedin.com/in/bilal-ahmed56ab)
 
 ---
 
-## 📜 License
+ 
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
----
-
-## ⚕️ Disclaimer
+##  Disclaimer
 
 > **MediGuide is for general educational purposes only.**
 > It does not provide medical advice, diagnosis, or treatment.
@@ -626,8 +623,8 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 <div align="center">
 
-Made with ❤️ for the DevelopersHub Corporation AI/ML Internship
+Made with love for the DevelopersHub Corporation AI/ML Internship
 
-⭐ If this project helped you, please give it a star on GitHub!
+ If this project helped you, please give it a star on GitHub!
 
 </div>
