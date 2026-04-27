@@ -550,7 +550,7 @@ jupyter>=1.0.0
 # Copy this file to .env and fill in your actual API key
 # Get a free key at: https://console.groq.com
 
-GROQ_API_KEY=gsk_your_groq_api_key_here
+GROQ_API_KEY= "YOUR_API_KEY"
 ```
 
 ### .gitignore
