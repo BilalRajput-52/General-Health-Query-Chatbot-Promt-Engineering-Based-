@@ -335,7 +335,7 @@ python -c "from groq import Groq; print(' Setup successful!')"
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Option 1 — Jupyter Notebook (Recommended)
 ```bash
@@ -528,7 +528,7 @@ task4-health-chatbot/
 │     ├── Section 8: Prompt Engineering Comparison
 │     └── Section 9: Results & Final Insights
 │
-├── 📄 README.md                           # This file
+├──  README.md                           # This file
 ├──  .env                               # API keys (NOT committed to GitHub)
 ├──  .env.example                       # Template for .env file
 ├──  requirements.txt                   # Python dependencies
@@ -612,9 +612,9 @@ __pycache__/
 **[Bilal Ahmed]**
 AI/ML Engineering Intern — DevelopersHub Corporation
 
-- 📧 Email: bilalahmadc.m56@gmail.com
-- 🐙 GitHub: [@BilalRajput-52](https://github.com/BilalRajput-52)
-- 💼 LinkedIn: [linkedin.com/in/bilal-ahmed56ab](https://linkedin.com/in/bilal-ahmed56ab)
+-  Email: bilalahmadc.m56@gmail.com
+-  GitHub: [@BilalRajput-52](https://github.com/BilalRajput-52)
+-  LinkedIn: [linkedin.com/in/bilal-ahmed56ab](https://linkedin.com/in/bilal-ahmed56ab)
 
 ---
 
